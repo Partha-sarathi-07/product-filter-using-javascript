@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>charthi.com</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="row1">
+      <input type="text" id = 'searchInput' placeholder="Search product names here..">
+      <button class="search" onclick="filter()">Search</button>
+    </div>
+    <div class="row2">
+      <button class="filters" onclick="displayCategory('All')">All</button>
+      <button class="filtersall" onclick="displayCategory('t-shirt')">T-shirts</button>
+      <button class="filtersall" onclick="displayCategory('pant')">Pants</button>
+      <button class="filtersall" onclick="displayCategory('jacket')">Jackets</button>
+      <button class="filtersall" onclick="displayCategory('shoe')">Shoes</button>
+      <button class="filtersall" onclick="displayCategory('watch')">Watches</button>
+
+    </div>  
+
+  </div>
+  <div class="products">
+
+    <div class="product">
+      <img src="jacket/jacket5" width="250px" height="350px">
+      <p>COOL LOOKING BLUE JACKET MEN</p>
+      <P>&#8377;2459</P>
+    </div>
+
+    <div class="product">
+      <img src="tshirt/tshirt1" width="250px" height="350px">
+      <p>LOS ANGELS STYLISH MEN T-SHIRT</p>
+      <P>&#8377;399</P>
+    </div>
+
+    <div class="product">
+      <img src="shoes/shoe1" width="250px" height="350px">
+      <p>ADIDAS ORIGINALS MEN SHOES</p>
+      <P>&#8377;2985</P>
+    </div>
+
+    <div class="product">
+      <img src="tshirt/tshirt2" width="250px" height="350px">
+      <p>BATMAN STYLISH MEN T-SHIRT</p>
+      <P>&#8377;350</P>
+    </div>
+
+    <div class="product">
+      <img src="watches/watch1" width="250px" height="350px">
+      <p>CLASSIC ROLEX WATCH 1ST COPY</p>
+      <P>&#8377;10999</P>
+    </div>
+
+    <div class="product">
+      <img src="underwear/pant2" width="250px" height="350px">
+      <p>KHAKI STYLISH MEN PANT</p>
+      <P>&#8377;1999</P>
+    </div>
+
+    <div class="product">
+      <img src="jacket/jacket1" width="250px" height="350px">
+      <p>STYLISH GREY JACKET MEN</p>
+      <P>&#8377;2499</P>
+    </div>
+
+    <div class="product">
+      <img src="tshirt/tshirt3" width="250px" height="350px">
+      <p>BITCH STYLISH MEN T-SHIRT</p>
+      <P>&#8377;319</P>
+    </div>
+
+    <div class="product">
+      <img class="shoe" src="shoes/shoe2" width="250px" height="130px" >
+      <p>N-BRAND MEN SHOE</p>
+      <P>&#8377;319</P>
+    </div>
+
+    <div class="product">
+      <img src="watches/watch2" width="250px" height="350px">
+      <p>ELEGANT MECHANICAL WATCH MEN</p>
+      <P>&#8377;7999</P>
+    </div>
+
+    <div class="product">
+      <img src="underwear/pant1" width="250px" height="350px">
+      <p>LITE GREY FABULOUS PANT MEN</p>
+      <P>&#8377;1799</P>
+    </div>
+
+    <div class="product">
+      <img src="jacket/jacket4" width="250px" height="350px">
+      <p>RED AND BLACK DUMMY JACKET</p>
+      <P>&#8377;1</P>
+    </div>
+
+    <div class="product">
+      <img src="watches/watch3" width="250px" height="350px">
+      <p>LADIES LOOK ALIKE WATCH MEN</p>
+      <P>&#8377;7999</P>
+    </div>
+
+    <div class="product">
+      <img src="tshirt/tshirt4" width="250px" height="350px">
+      <p>LUFFY STYLISH MEN T-SHIRT</p>
+      <P>&#8377;250</P>
+    </div>
+
+    <div class="product">
+      <img src="jacket/jacket3" width="250px" height="350px">
+      <p>SHINING BLACK JACKET MEN</p>
+      <P>&#8377;10999</P>
+    </div>
+
+    <div class="product">
+      <img src="underwear/pant5" width="250px" height="350px">
+      <p>MANLY LITE BLUE PANT</p>
+      <P>&#8377;10999</P>
+    </div>
+
+    <div class="product">
+      <img src="shoes/shoe4" width="250px" height="350px">
+      <p>SKETCHERS COMFY SHOE MEN</p>
+      <P>&#8377;10999</P>
+    </div>
+
+    <div class="product">
+      <img src="tshirt/tshirt5" width="250px" height="350px">
+      <p>PANDA STYLISH MEN T-SHIRT</p>
+      <P>&#8377;499</P>
+    </div>
+
+    <div class="product">
+      <img src="jacket/jacket6" width="250px" height="350px">
+      <p>BLACK GREY JACKET MEN</p>
+      <P>&#8377;1299</P>
+    </div>
+
+    <div class="product">
+      <img src="tshirt/tshirt6" width="250px" height="350px">
+      <p>NASA STYLISH MEN T-SHIRT</p>
+      <P>&#8377;249</P>
+    </div>
+
+    <div class="product">
+      <img src="underwear/pant3" width="250px" height="350px">
+      <p>BLACK MANLY PANT MEN</p>
+      <P>&#8377;1999</P>
+    </div>
+
+    <div class="product">
+      <img src="watches/watch4" width="250px" height="350px">
+      <p>CLASSIC BLACK WATCH MEN</p>
+      <P>&#8377;7999</P>
+    </div>
+
+    <div class="product">
+      <img class="shoe3" src="shoes/shoe3"  width="250px" height="220px">
+      <p>PUMA SOCKS LIKE MEN SHOE</p>
+      <P>&#8377;2198</P>
+    </div>
+
+    <div class="product">
+      <img src="jacket/jacket2" width="250px" height="350px">
+      <p>BLUE GREY MEN JACKET</p>
+      <P>&#8377;977</P>
+  </div>
+
+    <div class="product">
+      <img src="tshirt/tshirt8" width="250px" height="350px">
+      <p>PEACE STYLISH MEN T-SHIRT</p>
+      <P>&#8377;329</P>
+    </div>
+
+    <div class="product">
+      <img src="watches/watch5" width="250px" height="350px">
+      <p>PUMA COOL WATCH MEN</p>
+      <P>&#8377;7999</P>
+    </div>
+
+    <div class="product">
+      <img src="underwear/pant4" width="250px" height="350px">
+      <p>COTTON BLACK PANT MEN</p>
+      <P>&#8377;3299</P>
+    </div>
+
+    <div class="product">
+      <img src="tshirt/tshirt7" width="250px" height="350px">
+      <p>YELLOW AWFUL T-SHIRT MEN</p>
+      <P>&#8377;349</P>
+    </div>
+
+    <div class="product">
+      <img src="shoes/shoe5" width="250px" height="350px">
+      <p>ORANGE BLACK ADIDAS AWFUL SHOE MEN</p>
+      <P>&#8377;3299</P>
+    </div>
+
+    <div class="product">
+      <img src="tshirt/tshirt9" width="250px" height="350px">
+      <p>TOM STYLISH MEN T-SHIRT</p>
+      <P>&#8377;377</P>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
